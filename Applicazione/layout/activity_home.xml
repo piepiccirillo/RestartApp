@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/giallo"
+    android:gravity="fill_vertical"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:id="@+id/relativeChild1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >                 
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:drawableRight="@drawable/login"
+                android:text="@string/btn_home1" />
+
+            <Button
+                android:id="@+id/button_toMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button1"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/button1"
+                android:drawableLeft="@drawable/nome"
+                android:text="Sfoglia\ni video\ncaricati" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="24dp"
+                    android:clickable="false"
+                    android:text="Chi siamo?"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.92"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="RestArt Campania è un ambizioso progetto promosso da un gruppo di attivisti del Movimento 5 Stelle che in poco tempo vede già coinvolti centinaia di attivisti campani e che abbraccia già svariati territori della nostra regione. Al fine di rilanciare il nostro territorio e poter creare i presupposti tali da rimettere in moto il turismo, la ricchezza e quindi la macchina occupazionale abbiamo deciso di fare &apos;&apos;RestArt&apos;&apos; ossia di riavviare (ricominciare) dal nostro patrimonio storico, artistico e culturale. Ricominciamo dalle ricchezze attualmente abbandonate o comunque trascurate dagli attuali enti o amministrazioni locali. Riavvolgiamo il nastro della storia per prospettare insieme un futuro migliore."
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="Gli attivisti che aderiscono al progetto 5 stelle denominato RestArt Campania nel concreto cosa fanno?"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:text="Si mobilitano e si impegnano ad individuare nell&apos;ambito della propria realtà locale l&apos;eventuale presenza di siti, strutture o bellezze di chiaro interesse storico, artistico, culturale o paesaggistico. A RestArt Campania interessa denunciare e chiedere la riqualificazione di quei siti che attualmente versano in stato di fatiscenza, totale o semi-abbandono."
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="Individuata la struttura o il sito come si procede?"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:text="Individuata la struttura storico-artistica o la zona paesaggistica che versa in stato di totale o semi abbandono gli stessi attivisti si documentano, analizzano e ne studiano la provenienza storica al fine di realizzare un video denuncia."
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="Cosa gli attivisti devono denunciare?"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:text="All'interno del video che sarà caricato successivamente su supporto dvd e consegnato allo staff promotore gli attivisti partiranno dal raccontare brevemente la provenienza e l'importanza storico-artistica del ritrovamento per poi passare alle riprese dello stato in cui giace la stessa struttura o zona paesaggistica."
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="Quando è previsto il tour dei parlamentari?"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:text="Entro fine 2014 si procederà ad organizzare e fisssare le tappe del tour dei parlamentari 5 stelle nel patrimonio abbandonato individuato dai vari gruppi 5 stelle."
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="Quali le finalità e le prospettive?"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:text="1) Innanzitutto riscoprire e rispolverare strutture o siti quasi dimenticati dalle istituzioni ed avere a disposizione una chiara mappa territoriale di quella che può essere definita mancata ricchezza e mancata opportunità turistica e occupazionale.\n
+2) Denunciare l'abbandono di queste mancate fonti di turismo e di ricchezza per richiedere mediante apposite progettualità europee la loro riqualificazione e il rilancio dei rispettivi territori.\n
+3) Il tutto al fine di creare successivamente un vero e proprio itinerario turistico collaterale e collegato ai grandi siti e circuiti già presenti.\n\n
+Un nuovo indotto turistico di possibile ricchezza potrà coinvolgere non soltanto le grandi e storiche città Campane ma anche località periferiche che nascondono immensi e certificati tesori.\n\n"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
